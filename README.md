@@ -1,2 +1,2 @@
-# TTP-Project1
+# project1
 front end project with scss
