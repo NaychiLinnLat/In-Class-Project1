@@ -1,124 +1,16 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: #990;
+//foundation
+@import 'foundation/reset';
+@import 'foundation/normalization';
 
-.container {
-    width: 100%;
-}
+//layout
+@import 'layout/header';
+@import 'layout/footer.scss';
+@import 'layout/layout.scss';
 
-body{
-    font-family: $font-stack;
-}
+//object -> component
+@import 'object/component/button.scss';
+@import 'object/component/card.scss';
+@import 'object/component/title.scss';
 
-
-.nav__logo {
-    background-color: #000;
-    text-align: center;
-    padding: 5px;
-    a{
-        text-decoration: none;
-        color: #fff;
-    }
-}
-
-.nav__menu {
-    ul {
-        list-style-type: none;
-        display: flex;
-        box-sizing: border-box;
-        padding: 0px;
-        margin: 3px;
-
-        li {
-            width: calc(100% / 3);
-            text-align: center;
-            background-color: #de434390;
-            border-right: 1px solid #fff;
-            padding: 10px;
-            margin-top: 0;
-
-            a {
-                text-decoration: none;
-                color: #000;
-            }
-        }
-    }
-}
-
-.box {
-    width: 80%;
-    margin: 0 auto;
-
-    .cards {
-        margin: 0 auto;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 4px;
-
-        .card {
-            width: calc(33.33% - 8px);
-
-            &__img {
-                overflow: hidden;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    transition: all .5s ease-in-out;
-
-                    &:hover {
-                        transform: scale(1.5)
-                    }
-                }
-
-            }
-
-            .card__btn {
-                width: 200px;
-                height: 40px;
-                transform: skew(-16deg);
-                box-shadow: 3px 3px #5ff;
-                border: 1px solid #5ff;
-
-                &:hover{
-                    background-color: #990;
-                    transition: all .5s ease-in-out;
-                }
-                
-            }
-        }
-
-    }
-
-
-
-.faq{
-    &__list{
-           
-        dt{
-            background-color: #d29279d6;
-            padding: 12px;
-            position: relative;
-            color: #fff;
-            &::after{
-                position: absolute;
-                right: 30px;
-                content: "\002b";
-                font-size: 20px;
-            }
-        }
-        dd{
-            margin: 0 auto;
-            padding: 5px 10px;
-        }
-    }
-}
-
-}
-
-.ft{
-    text-align: center;
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-}
+//obejct -> project
+@import 'object/project/article.scss';
