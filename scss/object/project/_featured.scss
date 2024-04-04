@@ -1,0 +1,24 @@
+.feature{
+    padding-top: 40px;
+
+    &__title{
+
+        h3{
+            @include latoFontFamily(400);
+            font-size: 35px;
+            text-align: center;
+            padding: 10px
+
+        }
+        p{
+            @include poppinsFontFamily(300);
+            font-size: 16px;
+            text-align: center;
+            width: 771px;
+            height: 71px;
+            padding-left: 20%;
+            // justify-content: center;
+            // align-items: center;
+        }
+    }
+}

@@ -1,16 +1,43 @@
+//this should on top
+@import "object/utility/mixin";
 //foundation
-@import 'foundation/reset';
-@import 'foundation/normalization';
+@import "foundation/setting";
+@import "foundation/font";
+@import "foundation/reset";
+@import "foundation/base";
 
 //layout
-@import 'layout/header';
-@import 'layout/footer.scss';
-@import 'layout/layout.scss';
+@import "layout/header";
+@import "layout/layout";
 
-//object -> component
-@import 'object/component/button.scss';
-@import 'object/component/card.scss';
-@import 'object/component/title.scss';
+//component
+@import "object/component/button";
+@import "object/component/box";
+@import "object/component/card";
 
-//obejct -> project
-@import 'object/project/article.scss';
+
+//project
+@import "object/project/mainvisual";
+@import "object/project/video";
+@import "object/project/featured";
+
+
+
+
+
+//foundation
+// // @import 'foundation/reset';
+// // @import 'foundation/normalization';
+
+// //layout
+// @import 'layout/header';
+// @import 'layout/footer.scss';
+// @import 'layout/layout.scss';
+
+// //object -> component
+// @import 'object/component/button.scss';
+// @import 'object/component/card.scss';
+// @import 'object/component/title.scss';
+
+// //obejct -> project
+// @import 'object/project/article.scss';

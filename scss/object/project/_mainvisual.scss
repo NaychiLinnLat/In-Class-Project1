@@ -1,0 +1,54 @@
+.cover{
+    height: 100vh;
+    background-image: url(../images/mainvisual-bg.png);
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__txt{
+        h2{
+            @include latoFontFamily(300);
+            font-size: 100px;
+            text-align: center;
+            color: $whitecolor;
+            padding: 20px
+        }
+        p{
+            @include poppinsFontFamily(400);
+            font-size: 18px;
+            text-align: center;
+            color: $whitecolor;
+        }
+        
+    }
+}
+
+.c-btn{
+    a{
+    margin: 0 auto;
+    }
+}
+
+
+// .cover{
+//     height: 100vh;
+//     background-image: url(../../images/mainvisual-bg.png);
+//     justify-content: center;
+//     align-items: center;
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     backgro
+
+//     &__inner{
+//         text-align: center;
+//         justify-content: center;
+//         h2{
+//             @include latoFontFamily(300);
+//             text-align: center;
+//             justify-content: center;
+//         }
+//     }
+// }

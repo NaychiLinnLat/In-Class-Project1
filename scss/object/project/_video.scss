@@ -1,0 +1,22 @@
+.video{
+    position: relative;
+    text-align: center;
+    &__txt{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h3{
+            color: $whitecolor;
+            @include latoFontFamily(400);
+            font-size: 35px;
+        }
+        p{
+            color: $whitecolor;
+            @include poppinsFontFamily(300);
+            font-size: 16px;
+            padding: 20px;
+
+        }
+    }
+}

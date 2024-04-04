@@ -1,0 +1,37 @@
+.c-box{
+    display: flex;
+    height: 100%;
+    &__txt{
+        display: inline-flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        // padding-left: 70px;
+
+        h2{
+            @include latoFontFamily(500);
+            font-size: 50px;
+        }
+        p{
+            display: inline-block;
+            @include poppinsFontFamily(400);
+            font-size: 16px;
+            padding: 20px 0;
+            padding-right: 30px;
+        }
+    }
+    &__img{
+        width: 50%;
+        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__btn{
+        
+            text-align: left;
+    
+    }
+}
