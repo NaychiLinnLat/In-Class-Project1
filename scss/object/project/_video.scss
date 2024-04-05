@@ -1,22 +1,60 @@
-.video{
-    position: relative;
-    text-align: center;
-    &__txt{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        h3{
+.video {
+    background-image: url(../../../images/video.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__txt {
+        h3 {
             color: $whitecolor;
             @include latoFontFamily(400);
             font-size: 35px;
+            text-align: center;
         }
-        p{
+
+        p {
             color: $whitecolor;
             @include poppinsFontFamily(300);
             font-size: 16px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
             padding: 20px;
 
         }
     }
+
 }
+
+
+// .video{
+//     position: relative;
+//     text-align: center;
+//     &__txt{
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         h3{
+//             color: $whitecolor;
+//             @include latoFontFamily(400);
+//             font-size: 35px;
+//         }
+//         p{
+//             color: $whitecolor;
+//             @include poppinsFontFamily(300);
+//             font-size: 16px;
+//             padding: 20px;
+
+//         }
+//     }
+
+//     &__img{
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
